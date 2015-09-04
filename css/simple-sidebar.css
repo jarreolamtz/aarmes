@@ -6,6 +6,7 @@
 
 /* Toggle Styles */
 
+
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
@@ -26,7 +27,7 @@
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #000;
+    background: #4F81BC;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -50,12 +51,16 @@
 
 /* Sidebar Styles */
 
+.sidebar-logo {
+	width: 180px;
+}
+
 .sidebar-nav {
     position: absolute;
     top: 0;
     width: 250px;
     margin: 0;
-    padding: 0;
+    padding: 10px 0 0;
     list-style: none;
 }
 
@@ -67,13 +72,17 @@
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999999;
+    color: #fff;
+	font-size: 11px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
-    background: rgba(255,255,255,0.2);
+    background: #4774A8;
 }
 
 .sidebar-nav li a:active,
@@ -85,6 +94,7 @@
     height: 65px;
     font-size: 18px;
     line-height: 60px;
+	margin-bottom: 20px;
 }
 
 .sidebar-nav > .sidebar-brand a {
@@ -122,4 +132,9 @@
         position: relative;
         margin-right: 0;
     }
+}
+
+.sidebar-hr{
+	border-top: 1px solid #436FA2;
+	margin: 0 15px;
 }
