@@ -147,7 +147,7 @@
   width: 187px;
   height: 240px;
   background-color: #E1E6EB;
-  border-radius: 4px;
+  border-radius: 6px;
   -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
   display: inline-block;
   text-decoration: none;
@@ -159,7 +159,7 @@
   background: #fff;
   width: 100%;
   height: 150px;
-  border-radius: 4px 4px 0 0;
+  border-radius: 6px 6px 0 0;
 }
 
 
@@ -180,7 +180,7 @@
 .card-info-area {
   list-style: none;
   display: inline-block;
-  margin: 5px 0px;
+  margin: 3px 0px;
   padding: 0;
   width: 100%;
 }
@@ -190,13 +190,25 @@
 .card-info {
   color: #9D9D9D;
   font-size: 10px;
-  line-height: 13px;
+  line-height: 14px;
   margin-top: 2px;
   float: left;
   text-transform: uppercase;
   text-align: left;
   padding: 0 5px;
   letter-spacing: .2px;
+  overflow: hidden;
+  height: 53px;
+}
+.card-info-area span:before {
+    content: '...';
+    text-align: right;
+    position: absolute;
+    display: block;
+    width: 2em;
+    height: 1em;
+    bottom: 1em;
+    right: 5px;
 }
 
 .card-name-area {
@@ -209,7 +221,7 @@
     margin: 0;
 }
 .card-name {
-  font-size: 11px;
+  font-size: 10px;
   padding: 5px;
   color: white;
   text-transform: uppercase;
@@ -230,4 +242,10 @@
 
 .body-hr{
 	border-top: 1px solid #CED3D6 ;
+}
+
+.footer {
+  background-color: darkgray;
+  height: 300px;
+  width: 100%;
 }
