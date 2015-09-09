@@ -75,7 +75,7 @@
     text-decoration: none;
     color: #fff;
 	font-size: 11px;
-	font-weight: 300;
+	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
@@ -156,7 +156,10 @@
 
 
 .card-tape {
-  background: #fff;
+  background-image: url('../img/images.jpeg');
+  background-size: contain;
+  background-color: white;
+  background-repeat: no-repeat;
   width: 100%;
   height: 150px;
   border-radius: 6px 6px 0 0;
@@ -225,7 +228,7 @@
   padding: 5px;
   color: white;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: .3px;
 }
 
 .section-1 {
@@ -236,7 +239,7 @@
   font-size: 14px;
   color: #959595;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
   margin-left: 13px;
 }
 
@@ -248,4 +251,10 @@
   background-color: darkgray;
   height: 300px;
   width: 100%;
+}
+
+html {
+text-rendering: optimizeLegibility !important;
+
+-webkit-font-smoothing: antialiased !important;
 }
