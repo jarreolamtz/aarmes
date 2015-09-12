@@ -13,7 +13,10 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    
+    <!-- Ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
     <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
     <link href="css/cards.css" rel="stylesheet">
@@ -24,6 +27,26 @@
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+
+
+
+<script>
+  $(document).ready(function(){
+      $( "#card-pop-1" ).click(function(){
+          $("#load-card-s").load("cards.html");
+      });
+  });
+</script>
+
+
+
+
+<script>
+  $(document).ready(function(){
+          $("#load-card-s").load("readme.text");
+  });
+</script>
 
   </head>
 
@@ -85,15 +108,15 @@
       <!-- Page Content -->
       <div id="page-content-wrapper">
        <a href="#menu-toggle" class="btn btn-default btn-sidebar" id="menu-toggle"> MENU </a>
-        <div class="container-fluid">
+        <div class="container-fluid" id="load-card-s">
         
       <!-- SECTION 1 -->
           <section class="section-1" id="section-1">
             <div class="row">
-              <h3 class="section-name">Caldos a base de pollo y res </h3>
+              <h3 id="alerta" class="section-name">Caldos a base de pollo y res </h3>
             </div>
             <div class="row">
-              <div class="col-md-4 col-sm-6 col-xs-6">
+              <div id="card-pop-1" class="col-md-4 col-sm-6 col-xs-6">
                 <a href="#" class="card">
                   <div class="card-tape flyer-01">
                   </div>
@@ -165,7 +188,7 @@
       <!-- SECTION 2 -->  
           <section class="section-1" id="section-2">
             <div class="row">
-              <h3 class="section-name">Sazonadores especializados </h3>
+              <h3 class="section-name" id="card-pop-1">Sazonadores especializados </h3>
             </div>
             <div class="row">
               <div class="col-md-4 col-sm-6 col-xs-6">
@@ -1196,12 +1219,48 @@ $(function() {
         });
     </script>
     
+    
+    
+    
+    <script>
+       $( "#card-pop-1" ).click(function() {
+          $( "#container-fluid" ).load("cards.html #card-s-1");  
+        });
+    </script>
+    
+<script type="text/javascript">
+$("#card-pop-1").click(function() {
+
+    $( this ).load('cards.html #card-s-1');
+});
+</script>
+   
+   
+   <script>
+     $( "#alerta" ).click(function() {
+          alert("funcionaaaa");
+     });
+   </script>
+   
+   
+   
+   
+<script>
+    $(document).ready(function(){
+        $("#alerta").click(function(){
+            $("#container-fluid").load("cards.html");
+        });
+    });
+</script>
+    
 <!-- END SELECTED CARD -->
    
-   
+   <!--
     <script>
       $( ".container-fluid" ).load( "cards.html .card" );
     </script>
+    -->
+    
   </body>
 
 </html>
