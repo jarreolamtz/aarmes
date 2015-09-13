@@ -13,13 +13,13 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Ajax -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    
+
     <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
     <link href="css/cards.css" rel="stylesheet">
+    
+    <!--  Jquery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,26 +27,6 @@
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-
-
-
-
-<script>
-  $(document).ready(function(){
-      $( "#card-pop-1" ).click(function(){
-          $("#load-card-s").load("cards.html");
-      });
-  });
-</script>
-
-
-
-
-<script>
-  $(document).ready(function(){
-          $("#load-card-s").load("readme.text");
-  });
-</script>
 
   </head>
 
@@ -108,16 +88,16 @@
       <!-- Page Content -->
       <div id="page-content-wrapper">
        <a href="#menu-toggle" class="btn btn-default btn-sidebar" id="menu-toggle"> MENU </a>
-        <div class="container-fluid" id="load-card-s">
+        <div class="container-fluid">
         
       <!-- SECTION 1 -->
           <section class="section-1" id="section-1">
             <div class="row">
-              <h3 id="alerta" class="section-name">Caldos a base de pollo y res </h3>
+              <h3 id="click-card" class="section-name">Caldos a base de pollo y res </h3>
             </div>
             <div class="row">
-              <div id="card-pop-1" class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+              <div class="col-md-4 col-sm-6 col-xs-6">
+                <a href="#" id="card-load" class="card">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -188,7 +168,7 @@
       <!-- SECTION 2 -->  
           <section class="section-1" id="section-2">
             <div class="row">
-              <h3 class="section-name" id="card-pop-1">Sazonadores especializados </h3>
+              <h3 class="section-name">Sazonadores especializados </h3>
             </div>
             <div class="row">
               <div class="col-md-4 col-sm-6 col-xs-6">
@@ -1219,48 +1199,49 @@ $(function() {
         });
     </script>
     
-    
-    
-    
-    <script>
-       $( "#card-pop-1" ).click(function() {
-          $( "#container-fluid" ).load("cards.html #card-s-1");  
-        });
-    </script>
-    
-<script type="text/javascript">
-$("#card-pop-1").click(function() {
-
-    $( this ).load('cards.html #card-s-1');
-});
-</script>
-   
-   
-   <script>
-     $( "#alerta" ).click(function() {
-          alert("funcionaaaa");
-     });
-   </script>
-   
-   
-   
-   
-<script>
-    $(document).ready(function(){
-        $("#alerta").click(function(){
-            $("#container-fluid").load("cards.html");
-        });
-    });
-</script>
-    
 <!-- END SELECTED CARD -->
    
    <!--
+     <script>
+    $( "#click-card" ).click(function() {
+      alert( "simonnnn" );
+    });  
+  </script>
+  
     <script>
-      $( ".container-fluid" ).load( "cards.html .card" );
+      $( "#click-card" ).click(function() {
+        $(this).load( "https://raw.githubusercontent.com/jarreolamtz/aarmes/new/cards.html" );
+      });  
+    </script>
+   -->
+   <!--
+    <script>
+      $("#click-card").click(function() {
+        $( "#card-load" ).load( "https://raw.githubusercontent.com/jarreolamtz/aarmes/new/cards.html body" );
+      });
     </script>
     -->
     
+    <script>
+      $("#click-card").click(function(){
+        $.get( "cards.html", function( data ) {
+          $( "#card-s-1" ).html( data );
+          alert( "Load was performed." );
+        });
+      });
+        
+    </script>
+    
+    <script>
+      $("#click-card").click(function(){
+        $.get( "https://raw.githubusercontent.com/jarreolamtz/aarmes/new/cards.html", function( data ) {
+ 
+          alert( "Load was performed." );
+        });
+      });
+  </script>
+  
+  
   </body>
 
 </html>
