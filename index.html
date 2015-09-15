@@ -18,6 +18,8 @@
     <link href="css/simple-sidebar.css" rel="stylesheet">
     <link href="css/cards.css" rel="stylesheet">
     
+    <link href="js/cards.js" rel="jquery">
+    
     <!--  Jquery -->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -86,22 +88,24 @@
         </ul>
       </div>
       <!-- /#sidebar-wrapper -->
+      
+    <!-- LOAD CARD HERE-->
+        <div id="card-load"></div>
       <!-- Page Content -->
       <div id="page-content-wrapper">
        <a href="#menu-toggle" class="btn btn-default btn-sidebar" id="menu-toggle"> MENU </a>
+
         <div class="container-fluid">
-        
-      <!-- LOAD CARD HERE-->
-        <div id="card-load"></div>
         
       <!-- SECTION 1 -->
           <section class="section-1" id="section-1">
             <div class="row">
-              <h3 id="click-card" class="section-name">Caldos a base de pollo y res </h3>
+              <h3 class="section-name">Caldos a base de pollo y res </h3>
             </div>
             <div class="row">
+             
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-1-1">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -119,11 +123,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-1-2">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -140,11 +144,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div href="#" class="card" id="click-card-1-3">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -162,7 +166,7 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
             </div>
             <hr class="body-hr">
@@ -176,7 +180,7 @@
             </div>
             <div class="row">
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-2-1">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -195,11 +199,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-2-2">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -221,11 +225,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div href="" class="card" id="click-card-2-3">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -246,7 +250,7 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
             </div>
             <hr class="body-hr">
@@ -260,7 +264,7 @@
             </div>
             <div class="row">
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-3-1">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -282,11 +286,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-3-2">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -304,11 +308,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-3-3">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -323,7 +327,7 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
             </div>
             <hr class="body-hr">
@@ -337,7 +341,7 @@
             </div>
             <div class="row">
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div href="#" class="card" id="click-card-4-1">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -355,11 +359,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div href="#" class="card" id="click-card-4-2">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -374,11 +378,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div href="#" class="card" id="click-card-4-3">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -393,7 +397,7 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
             </div>
             <hr class="body-hr">
@@ -407,7 +411,7 @@
             </div>
             <div class="row">
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div href="#" class="card" id="click-card-5-1">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -429,11 +433,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div href="#" class="card" id="click-card-5-2">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -448,11 +452,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div href="#" class="card" id="click-card-5-1">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -467,7 +471,7 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
             </div>
             <hr class="body-hr">
@@ -481,7 +485,7 @@
             </div>
             <div class="row">
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div href="#" class="card" id="click-card-6-1">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -498,11 +502,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div href="#" class="card" id="click-card-6-2">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -520,11 +524,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div href="#" class="card" id="click-card-6-3">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -543,7 +547,7 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
             </div>
           </section>
@@ -553,7 +557,7 @@
           <section class="section-1">
             <div class="row">
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div href="#" class="card" id="click-card-6-1-1">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -569,11 +573,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div href="#" class="card" id="click-card-6-1-2">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -592,11 +596,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-6-1-3">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -613,7 +617,7 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
             </div>
           </section>
@@ -623,7 +627,7 @@
           <section class="section-1">
             <div class="row">
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-6-2-1">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -640,11 +644,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-6-2-2">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -659,11 +663,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-6-2-3">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -678,7 +682,7 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
             </div>
             <hr class="body-hr">
@@ -692,7 +696,7 @@
             </div>
             <div class="row">
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-7-1">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -708,11 +712,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-7-2">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -728,11 +732,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-7-3">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -748,7 +752,7 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
             </div>
             <hr class="body-hr">
@@ -762,7 +766,7 @@
             </div>
             <div class="row">
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-8-1">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -781,11 +785,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-8-2">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -800,11 +804,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-8-3">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -819,7 +823,7 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
             </div>
             <hr class="body-hr">
@@ -833,7 +837,7 @@
             </div>
             <div class="row">
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-9-1">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -848,11 +852,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-9-2">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -867,11 +871,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-9-3">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -887,7 +891,7 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
             </div>
           </section>
@@ -895,7 +899,7 @@
           <section class="section-1">
             <div class="row">
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-9-1-1">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -910,11 +914,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-9-1-2">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -930,11 +934,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-9-1-3">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -949,7 +953,7 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
             </div>
             <hr class="body-hr">
@@ -962,7 +966,7 @@
             </div>
             <div class="row">
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-10-1">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -978,11 +982,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-10-2">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -998,11 +1002,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-10-32">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -1018,7 +1022,7 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
             </div>
             <hr class="body-hr">
@@ -1032,7 +1036,7 @@
             </div>
             <div class="row">
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-11-1">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -1048,11 +1052,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-11-2">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -1068,11 +1072,11 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
 
               <div class="col-md-4 col-sm-6 col-xs-6">
-                <a href="#" class="card">
+                <div class="card" id="click-card-11-3">
                   <div class="card-tape flyer-01">
                   </div>
                   <ul class="card-name-area">
@@ -1088,7 +1092,7 @@
                       </span>
                     </li>
                   </ul>
-                </a>
+                </div>
               </div>
             </div>
           </section>
@@ -1201,65 +1205,65 @@
     -->
 <!-- CARD LOAD AJAX -->
 
-   <!--
-     <script>
-    $( "#click-card" ).click(function() {
-      alert( "simonnnn" );
-    });  
-  </script>
-  
+<!-- CARDS LINE 1 -->
+   
     <script>
-      $( "#click-card" ).click(function() {
-        $(this).load( "https://raw.githubusercontent.com/jarreolamtz/aarmes/new/cards.html" );
-      });  
-    </script>
-    
-    
-    <script>
-      $("#click-card").click(function() {
-        $( "#card-load" ).load( "https://raw.githubusercontent.com/jarreolamtz/aarmes/new/cards.html body" );
-      });
-    </script>
-    
-    
-    <script>
-      $("#click-card").click(function(){
-        $.get( "cards.html", function( data ) {
-          $( "#card-s-1" ).html( data );
-          alert( "Load was performed." );
-        });
-      });
-        
-    </script>
-    
-    <script>
-      $("#click-card").click(function(){
-        $.get( "https://raw.githubusercontent.com/jarreolamtz/aarmes/new/cards.html", function( data ) {
- 
-          alert( "Load was performed." );
-        });
-      });
-  </script>
-
-      <script>
-      $("#click-card").click(function() {
-        $( "#card-load" ).get( "cards.html" );
-        alert( "Load was performed." );
-      });
-    </script>
--->
-  
-    <script>
-      $("#click-card").click(function() {
-        $( "#card-load" ).load( "https://raw.githubusercontent.com/jarreolamtz/aarmes/new/cards.html" );
-        alert( "Load was performed." );
-                $( ".black-background" ).click(function() {
+      $("#click-card-1-1").click(function() {
+        $( "#card-load" ).load( "cards.html" );
+                $( document ).click(function() {
           $( ".black-background" ).fadeOut(); 
         });
       });
     </script>
 
-  
+    <script>
+      $("#click-card-1-2").click(function() {
+        $( "#card-load" ).load( "cards.html" );
+                $( document ).click(function() {
+          $( ".black-background" ).fadeOut(); 
+        });
+      });
+    </script>
+    
+    <script>
+      $("#click-card-1-3").click(function() {
+        $( "#card-load" ).load( "cards.html" );
+                $( document ).click(function() {
+          $( ".black-background" ).fadeOut(); 
+        });
+      });
+    </script>
+    
+<!-- CARDS LINE 2 -->
+   
+    <script>
+      $("#click-card-2-1").click(function() {
+        $( "#card-load" ).load( "cards.html" );
+                $( document ).click(function() {
+          $( ".black-background" ).fadeOut(); 
+        });
+      });
+    </script>
+
+    <script>
+      $("#click-card-2-2").click(function() {
+        $( "#card-load" ).load( "cards.html" );
+                $( document ).click(function() {
+          $( ".black-background" ).fadeOut(); 
+        });
+      });
+    </script>
+    
+    <script>
+      $("#click-card-2-3").click(function() {
+        $( "#card-load" ).load( "cards.html" );
+                $( document ).click(function() {
+          $( ".black-background" ).fadeOut(); 
+        });
+      });
+    </script>
+    
+    
   </body>
 
 </html>
