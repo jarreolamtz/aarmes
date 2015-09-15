@@ -1106,7 +1106,7 @@
     
     <!-- /#wrapper -->
     
-      <!-- Card Active -->
+      <!-- Card Active 
 
       <div class="black-background">
         <div class="card-active">
@@ -1130,7 +1130,9 @@
           </div>
         </div>
       </div>
-     
+          
+     -->
+
       
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -1181,13 +1183,7 @@
     </script>   
     
     
-<!-- SELECTED CARD -->
-     
-      <script>
-        $( ".black-background" ).click(function() {
-          $( this ).fadeOut();
-        });
-    </script>
+<!-- SELECTED CARD
 
     <script>
         $( ".card" ).click(function() {
@@ -1195,7 +1191,14 @@
         });
     </script>
     
+    <script>
+        $( document ).click(function() {
+          $( ".black-background" ).fadeOut(); 
+        });
+    </script>
     
+    
+    -->
 <!-- CARD LOAD AJAX -->
 
    <!--
@@ -1210,8 +1213,8 @@
         $(this).load( "https://raw.githubusercontent.com/jarreolamtz/aarmes/new/cards.html" );
       });  
     </script>
-   -->
-   <!--
+    
+    
     <script>
       $("#click-card").click(function() {
         $( "#card-load" ).load( "https://raw.githubusercontent.com/jarreolamtz/aarmes/new/cards.html body" );
@@ -1237,16 +1240,25 @@
         });
       });
   </script>
--->
+
       <script>
       $("#click-card").click(function() {
-        $( "#card-load" ).get( "https://raw.githubusercontent.com/jarreolamtz/aarmes/new/cards.html" );
+        $( "#card-load" ).get( "cards.html" );
         alert( "Load was performed." );
       });
     </script>
+-->
+  
+    <script>
+      $("#click-card").click(function() {
+        $( "#card-load" ).load( "https://raw.githubusercontent.com/jarreolamtz/aarmes/new/cards.html" );
+        alert( "Load was performed." );
+                $( ".black-background" ).click(function() {
+          $( ".black-background" ).fadeOut(); 
+        });
+      });
+    </script>
 
-  
-  
   
   </body>
 

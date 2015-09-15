@@ -137,7 +137,6 @@ text-rendering: optimizeLegibility !important;
   z-index: 100;
   top: 0;
   position: fixed;
-  display:none;
 }
 
 .card-active {
