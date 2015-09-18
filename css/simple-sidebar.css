@@ -148,3 +148,69 @@ body {
 	margin: 0 15px;
 }
 
+@media (min-width: 900px) {
+  #menu-toggle { 
+    display: none;
+  }
+  
+}
+
+#splash-screen {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,1);
+  z-index: 30;
+  position: fixed;
+}
+
+  .splash-logo {
+    width: 400px;
+    top: 30%;
+    left: 46%;
+}
+
+
+@media (min-width: 700px) {
+  .splash-text {
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+    left: 40%;
+    top: 60%;
+    text-transform: uppercase;
+  }
+
+  .center-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -110px;
+    margin-left: -100px;
+    width: 500px;
+  }
+}
+
+
+@media (max-width: 699px) {
+  .splash-text {
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+    top: 60%;
+    text-transform: uppercase;
+    margin: 0 30px;
+  }
+
+  .center-box {
+    position: fixed;
+    top: 50%;
+    margin-top: -110px;
+  }
+  
+  .splash-logo {
+    width: 300px;
+    top: 30%;
+    left: 13%;
+    position: relative;
+  }
+}
