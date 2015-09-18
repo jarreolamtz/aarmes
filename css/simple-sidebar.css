@@ -158,9 +158,12 @@ body {
 #splash-screen {
   width: 100%;
   height: 100%;
-  background-color: rgba(255,255,255,1);
   z-index: 30;
   position: fixed;
+  background: white;
+
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
   .splash-logo {
@@ -172,21 +175,41 @@ body {
 
 @media (min-width: 700px) {
   .splash-text {
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     display: inline-block;
     left: 40%;
     top: 60%;
     text-transform: uppercase;
+    color: #aaa;
+    font-family: "open sans";
+    font-weight: 600;
+  }
+  
+  .splash-hr{
+    margin: 10px 0px;
+  }
+  
+  .splash-text-2 {
+    font-size: 40px;
+    text-align: center;
+    display: inline-block;
+    left: 40%;
+    top: 60%;
+    text-transform: uppercase;
+    color: #aaa;
+    font-family: "open sans";
+    font-weight: 300;
   }
 
+  
   .center-box {
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 30%;
     margin-top: -110px;
     margin-left: -100px;
-    width: 500px;
+    width: 550px;
   }
 }
 
@@ -199,8 +222,29 @@ body {
     top: 60%;
     text-transform: uppercase;
     margin: 0 30px;
+    color: #aaa;
+    font-family: "open sans";
+    font-weight: 600;
   }
 
+  .splash-hr{
+    margin: 10px 30px;
+  }
+  
+  .splash-text-2 {
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+    left: 40%;
+    top: 60%;
+    text-transform: uppercase;
+    color: #aaa;
+    font-family: "open sans";
+    font-weight: 300;
+    margin: 0 30px;
+  }
+  
+  
   .center-box {
     position: fixed;
     top: 50%;
