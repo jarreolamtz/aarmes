@@ -16,7 +16,7 @@
 
 
 .card-tape {
-  background-image: url('../img/images.jpeg');
+
   background-size: contain;
   background-color: white;
   background-repeat: no-repeat;
@@ -92,7 +92,7 @@
 }
 
 .section-1 {
-  max-width: 900px;
+  max-width: 820px;
   margin: 0 auto;
 }
 .section-name {
@@ -109,7 +109,7 @@
 
 .footer {
   background-color: darkgray;
-  height: 300px;
+  height: 100px;
   width: 100%;
 }
 #empaques {
@@ -142,13 +142,36 @@ td {
     padding: 5px 10px;
     background-color: white;
 }
+
 tr td:first-child {
   text-transform: uppercase;
   font-size: 12px;
 }
 
+
+.card-details {
+  font-size: 11px;
+}
+
+.card-details tr td:first-child {
+  text-transform: none;
+  font-size: 11px;
+}
+
+.card-details td {
+    border: 1px solid rgba(223, 228, 236, 1);
+    background-color: white;
+}
+
+
 table {
   max-width: 825px;
+}
+
+.card-active table {
+  margin-left: 44px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 html {
@@ -180,7 +203,7 @@ text-rendering: optimizeLegibility !important;
 }
 
 .card-active {
-  width: 800px;
+  width: 900px;
   height: 420px;
   background: white;
   border-radius: 6px;
@@ -199,21 +222,35 @@ text-rendering: optimizeLegibility !important;
   
 }
 
+@media (max-width: 699px) {
+  .card-active { 
+    width: 91%;
+  }
+  .card-image {
+    width: 33%;
+    background-size: cover;
+  }
+  .card-detail {
+    width: 67%;
+  }
+  
+}
+
+
 .card-image {
-  width: 45%;
+  width: 40%;
   height: 100%;
   background: blue;
   border-radius: 6px 0 0 6px;
   display: inline-block;
-  background-image: url('../img/images.jpeg');
-  background-size: contain;
+  background-size: cover;
   background-color: white;
   background-repeat: no-repeat;
   background-position: 50%;
 }
 
 .card-details {
-  width:55%;
+  width:60%;
   height: 420px;
   border-radius: 0 6px 6px 0;
   display: inline-block;
@@ -262,5 +299,264 @@ text-rendering: optimizeLegibility !important;
   font-size: 13px;
   font-weight: 200;
   padding-left: 30px;
-  width: 410px;
+  max-width: 500px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.te-list {
+  font-size: 13px;
+}
+
+
+.btn-sidebar {
+  right: 5%;
+}
+
+
+.color-1 .card-name {
+  background-color: orange;
+}
+
+.color-2 .card-name {
+  background-color: chocolate;
+}
+
+.color-3 .card-name {
+  background-color: #A73333;
+}
+
+.color-4 .card-name {
+  background-color: #8ABD3C;
+}
+
+.color-5 .card-name {
+  background-color: #408C40;
+}
+
+.color-6 .card-name {
+  background-color: gray;
+}
+
+.color-7 .card-name {
+  background-color: #924A92;
+}
+
+.color-8 .card-name {
+  background-color: coral;
+}
+
+.color-9 .card-name {
+  background-color: orange;
+}
+
+
+
+
+
+/*--            IMAGENES   SMALL             --*/
+
+.card-img-s-1 {
+  background-image: url('../img/products/small/p-s-1.png');
+}
+
+.card-img-s-2 {
+  background-image: url('../img/products/small/p-s-2.png');
+}
+
+.card-img-s-3 {
+  background-image: url('../img/products/small/p-s-3.png');
+}
+
+.card-img-s-4 {
+  background-image: url('../img/products/small/p-s-4.png');
+}
+
+.card-img-s-5 {
+  background-image: url('../img/products/small/p-s-5.png');
+}
+
+.card-img-s-6 {
+  background-image: url('../img/products/small/p-s-6.png');
+}
+
+.card-img-s-7 {
+  background-image: url('../img/products/small/p-s-7.png');
+}
+
+.card-img-s-8 {
+  background-image: url('../img/products/small/p-s-8.png');
+}
+
+.card-img-s-9 {
+  background-image: url('../img/products/small/p-s-9.png');
+}
+
+.card-img-s-10 {
+  background-image: url('../img/products/small/p-s-10.png');
+}
+
+.card-img-s-11 {
+  background-image: url('../img/products/small/p-s-11.png');
+}
+
+.card-img-s-12 {
+  background-image: url('../img/products/small/p-s-12.png');
+}
+
+.card-img-s-13 {
+  background-image: url('../img/products/small/p-s-13.png');
+}
+
+.card-img-s-14 {
+  background-image: url('../img/products/small/p-s-14.png');
+}
+
+.card-img-s-15 {
+  background-image: url('../img/products/small/p-s-15.png');
+}
+
+.card-img-s-16 {
+  background-image: url('../img/products/small/p-s-16.png');
+}
+
+.card-img-s-17 {
+  background-image: url('../img/products/small/p-s-17.png');
+}
+
+.card-img-s-18 {
+  background-image: url('../img/products/small/p-s-18.png');
+}
+
+.card-img-s-19 {
+  background-image: url('../img/products/small/p-s-19.png');
+}
+
+.card-img-s-20 {
+  background-image: url('../img/products/small/p-s-20.png');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--            IMAGENES   PREVIEW             --*/
+
+.card-img-1 {
+  background-image: url('../img/products/preview/p-1.png');;
+}
+
+.card-img-2 {
+  background-image: url('../img/products/preview/p-2.png');;
+}
+
+.card-img-3 {
+  background-image: url('../img/products/preview/p-3.png');;
+}
+
+.card-img-4 {
+  background-image: url('../img/products/preview/p-4.png');;
+}
+
+.card-img-5 {
+  background-image: url('../img/products/preview/p-5.png');;
+}
+
+.card-img-6 {
+  background-image: url('../img/products/preview/p-6.png');;
+}
+
+.card-img-7 {
+  background-image: url('../img/products/preview/p-7.png');;
+}
+
+.card-img-8 {
+  background-image: url('../img/products/preview/p-8.png');;
+}
+
+.card-img-9 {
+  background-image: url('../img/products/preview/p-9.png');;
+}
+
+.card-img-10 {
+  background-image: url('../img/products/preview/p-10.png');;
+}
+
+.card-img-11 {
+  background-image: url('../img/products/preview/p-11.png');;
+}
+
+.card-img-12 {
+  background-image: url('../img/products/preview/p-12.png');;
+}
+
+.card-img-13 {
+  background-image: url('../img/products/preview/p-13.png');;
+}
+
+.card-img-14 {
+  background-image: url('../img/products/preview/p-14.png');;
+}
+
+.card-img-15 {
+  background-image: url('../img/products/preview/p-15.png');;
+}
+
+.card-img-16 {
+  background-image: url('../img/products/preview/p-16.png');;
+}
+
+.card-img-17 {
+  background-image: url('../img/products/preview/p-17.png');;
+}
+
+.card-img-18 {
+  background-image: url('../img/products/preview/p-18.png');
+}
+
+.card-img-19 {
+  background-image: url('../img/products/preview/p-19.png');
+}
+
+.card-img-20 {
+  background-image: url('../img/products/preview/p-20.png');
+}
+
+
+.close {
+    position: relative;
+    float: right;
+    top: 10px;
+    font-size: 41px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+    color: white;
+}
+
+
+.card-active-about-us {
+  width: 600px;
+  padding: 40px 40px;
+  background: white;
+  border-radius: 6px;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9d9d9d;
+  position: relative;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.22);
+  text-align: center;
 }

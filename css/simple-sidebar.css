@@ -37,7 +37,7 @@ body {
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #4F81BC;
+    background: #CC5C36;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -61,7 +61,7 @@ body {
 /* Sidebar Styles */
 
 .sidebar-logo {
-	width: 180px;
+	width: 155px;
 }
 
 .sidebar-nav {
@@ -91,12 +91,13 @@ body {
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #ffffff;
-    background: #4774A8;
+    background: #BB5430;
 }
 
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
     text-decoration: none;
+    background: #BB5430;
 }
 
 .sidebar-nav > .sidebar-brand {
@@ -144,7 +145,7 @@ body {
 }
 
 .sidebar-hr{
-	border-top: 1px solid #436FA2;
+	border-top: 1px solid #FFFFFF;
 	margin: 0 15px;
 }
 
@@ -257,4 +258,22 @@ body {
     left: 13%;
     position: relative;
   }
+}
+
+
+.nosotros-text {
+   font-weight: 500;
+    font-family: open sans;
+    font-size: 15px;
+    max-width: 806px;
+    line-height: 20px;
+    margin-left: 13px;
+}
+
+
+.mailto {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: open sans;
+  color:ghostwhite;
 }
