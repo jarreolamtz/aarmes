@@ -93,7 +93,7 @@ body {
   height: auto;
   margin-bottom: 40px;
   position: fixed;
-  top: 28%;
+  top: -25%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
