@@ -45,6 +45,7 @@
               <img class="sidebar-logo" src="img/aarmes-logo-2-06.png" alt="Aarmes Logo">
             </a>
           </li>
+          
           <li>
             <a href="#">Index</a>
           </li>
@@ -89,7 +90,7 @@
       </div>
       <!-- /#sidebar-wrapper -->
       
-    <!-- LOAD CARD HERE-->
+    <!-- SPLASH SCREEN -->
         <div id="splash-screen">
           <div class="center-box">
             <!-- <img class="splash-logo" src="img/aarmes-logo.png" alt="Aarmes Logo"> -->
@@ -99,7 +100,7 @@
            </div>
         </div>
         
-    <!-- SPLASH SCREEN -->
+    <!-- LOAD CARD HERE-->
         <div id="card-load">
         </div>
         
@@ -963,16 +964,16 @@
 <!-- CARD LOAD AJAX -->
 
 <!-- CARDS LINE 1 -->
-   
+
    <script>
       $("#click-card-1-1").click(function() {
         $( "#card-load" ).load( "cards-eng.html #card-s-1-1" );
-                $(".black-background-centered" ).click(function() {
+                $( document ).dblclick(function() {
           $( ".black-background" ).fadeOut(); 
         });
       });
     </script>
-
+    
     <script>
       $("#click-card-1-2").click(function() {
         $( "#card-load" ).load( "cards-eng.html #card-s-1-2" );
